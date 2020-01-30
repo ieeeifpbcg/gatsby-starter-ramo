@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { primaryColor } from '~/styles/colors';
+import theme from '~/styles/theme';
 
 export const Container = styled.div`
   width: 100vw;
@@ -24,7 +24,7 @@ export const Container = styled.div`
     padding: 24px;
 
     a {
-      color: ${primaryColor.active};
+      color: ${theme.primary.active};
     }
   }
 `;

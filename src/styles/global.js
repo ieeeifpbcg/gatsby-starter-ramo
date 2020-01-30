@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-import { primaryColor, secundaryColor } from './colors';
+import theme from './theme';
 
 export default createGlobalStyle`
   * {
@@ -9,16 +9,16 @@ export default createGlobalStyle`
     box-sizing: border-box;
 
     &::selection {
-      background-color: ${primaryColor.active};
-      color: ${secundaryColor.text};
+      background-color: ${theme.primary.active};
+      color: ${theme.primary.text};
     }
   }
 
   html, body {
     font: 16px sans-serif;
 
-    background-color: ${primaryColor.bg};
-    color: ${primaryColor.text};
+    background-color: ${theme.primary.bg};
+    color: ${theme.primary.text};
 
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
@@ -31,7 +31,7 @@ export default createGlobalStyle`
 
   a,
   button {
-    color: ${primaryColor.text};
+    color: ${theme.primary.text};
     text-decoration: none;
   }
 
