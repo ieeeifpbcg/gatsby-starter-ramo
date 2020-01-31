@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
+  <a href="https://github.com/ieeeifpbcg">
     <img alt="Gatsby" src="./src/assets/ramo.png" height="120" />
   </a>
 </p>
