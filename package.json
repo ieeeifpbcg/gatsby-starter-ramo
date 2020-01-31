@@ -3,6 +3,14 @@
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": ["eslint --fix", "git add"]
+  },
   "dependencies": {
     "gatsby": "^2.18.12",
     "gatsby-image": "^2.2.34",
@@ -39,6 +47,8 @@
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^1.7.0",
     "gatsby-plugin-root-import": "^2.0.5",
+    "husky": "^4.2.1",
+    "lint-staged": "^10.0.7",
     "prettier": "^1.19.1"
   },
   "keywords": [
